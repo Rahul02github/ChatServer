@@ -1,0 +1,23 @@
+Nagios CLI Configuration
+
+=>Download nagios-cli-master.zip Zip file from and unzip
+	https://github.com/tehmaze/nagios-cli
+=>Give the permission to the nagios-cli-master folder
+	# chmod -R 777 nagios-cli-master
+=>Copy the nagios-cli-master folder from local ubuntu Download folder to Nagios server
+	# cp /home/ubuntu/Downloads/nagios-cli-master /var/lib/lxd/storage-pools/default/containers/juju-993c57-27/rootfs/home/ubuntu
+=>goto inside Nagios using ssh command
+	# juju ssh nagios/0
+	# sudo -i (comming into root mode)
+=>goto to nagios-cli-master folder location and check the file is present or not
+	# cd /home/ubuntu/
+	# ls
+=>go inside nagios-cli-master folder and check the files and folder present inside 
+	# cd nagios-cli-master
+	# ls
+=>Check the README.me file
+	# cat README.md
+=>Execute the nagios-cli command
+	# ./nagios-cli
+=>After that you will come inside nagios-cli Interface
+	nagios>help (you can type help for help)
